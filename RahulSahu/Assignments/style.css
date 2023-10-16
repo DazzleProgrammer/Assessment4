@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.headSection {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    color: white;
+    padding: 10px 50px;
+}
+
+.logo {
+    width: 200px;
+}
+
+.rightNav {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+}
+
+nav button {
+    width: 300px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 7px;
+}
+
+.rightBottomNav {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.search input {
+    width: 500px;
+    height: 40px;
+    padding-left: 20px;
+}
+
+.search>div {
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    height: 40px;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu i {
+    color: white;
+}
+
+
+.mainDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.centerDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 95%;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.heroImg {
+    width: 800px;
+    height: 450px;
+    position: relative;
+}
+
+.heroImg::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background-color: rgba(214, 212, 212, 0.204);
+    width: 800px;
+    height: 400px;
+
+}
+
+.heroContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    width: 800px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.heroContent>div {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 3rem;
+    color: red;
+    font-weight: bolder;
+}
+
+.heroContent button {
+    padding: 10px 50px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.heroRight {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.dropDown{
+    width: 200px;
+    height: 450px;
+    background-color: whitesmoke;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.dropDown{
+    font-size: 1.1em;
+    text-transform: capitalize;
+}
+.deal{
+    gap: 30px;
+    align-items: start !important;
+}
+.dealRight{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 75%;
+}
+.topDiv{
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(33, 122, 122, 0.579);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0px 40px; */
+
+}
+.topDiv span{
+    color: red;
+    text-shadow: 0px 2px 10px 10px white;
+}
+.topDiv button{
+    padding: 5px 10px;
+    color: white;
+    box-shadow: 2px 2px 5px 3px gray;
+    background-color: red;
+    margin-right: 30px;
+    border: none;
+}
+.deal .midDeal button{
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 1em;
+    border: none;
+    color: white;
+    background-color: black;
+    width: 20%;
+    border-radius: 5px;
+}
+.deal .card{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 25px;
+    width: 48%;
+}
+.deal .data{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 70%;
+}
+.seller{
+    gap: 20px;
+    flex-direction: column !important;
+    align-items: start;
+    
+}
+.mainSeller{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+.news{
+    justify-content: start !important;
+}
+
+.footerLogo{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.social{
+    justify-content: space-between !important;
+    align-items: start;
+}
+ul,li{
+    padding-left: 15px;
+}
+.mainSeller button{
+    padding: 5px 10px;
+    background-color: red;
+    border: none;
+    border-radius: 3px;
+    width: 40%;
+    color: white;
+}

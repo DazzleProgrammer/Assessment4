@@ -1,0 +1,121 @@
+body {
+    background-color: #171d23;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+  }
+  
+  .Snake {
+    background-color: white;
+    width: 400px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .Snakebody {
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+  }
+  
+  .Snake * {
+    background: #191919;
+    padding: var(--p, 0);
+    margin: var(--m, 0);
+    position: absolute;
+  }
+  
+  .Snake .Snakebody i {
+    border: 5px solid #e08027;
+    --p: 35px 30px;
+    --m: 0;
+    border-radius: var(--r);
+    --r: 0 0 40px 40px;
+    border-top: #0000;
+  }
+  
+  .Snake .Snakebody i i {
+    --p: 27.5px 15px;
+    --m: -35px -20px;
+  }
+  
+  .Snake .Snakebody u {
+    --m: 85px -35px;
+  }
+  
+  .Snake .Snakebody u + u {
+    --m: 185px 65px;
+  }
+  
+  .Snake .Snakebody u + u + u {
+    --m: 185px 165px;
+  }
+  
+  .Snake .Snakebody b {
+    --m: 115px 85px;
+    transform: rotate(180deg);
+  }
+  
+  .Snake .Snakebody b + b {
+    --m: 115px 185px;
+  }
+  
+  .Snake .Snakebody b + b + b {
+    --m: 215px 285px;
+  }
+  
+  .Snake .Snakebody b + b + b i {
+    --r: 0 0 35px;
+    border-left: 5px solid #0000;
+  }
+  
+  .Snake .Snakebody b + b + b i i {
+    --r: 0 0 20px;
+  }
+  
+  .Snake .Snakebody div {
+    --m: 115px 65px;
+  }
+  
+  .Snake .Snakebody div + div {
+    --m: 115px;
+  }
+  
+  .Snake .Snakebody div i {
+    --p: 50px 30px;
+    --m: 0;
+    --r: 0;
+    border-bottom: #000;
+  }
+  
+  .Snake .Snakebody div i i {
+    --p: 50px 15px;
+    --m: -50px -20px;
+  }
+  
+  .Snake .Snakebody img {
+    background: #e08027;
+    --p: 15px 25px;
+    --m: 135px 265px;
+    border-radius: 10px 15px 15px 10px;
+  }
+  
+  .Snake .Snakebody img + u + u,
+  .Snake .Snakebody img + u {
+    background: #191919;
+    border-radius: 50%;
+    --p: 5px;
+    --m: 137px 295px;
+  }
+  
+  .Snake .Snakebody img + u + u {
+    --m: 153px 295px;
+  }

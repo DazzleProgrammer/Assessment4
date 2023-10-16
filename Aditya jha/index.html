@@ -1,0 +1,542 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+</head>
+
+<body onload="slider()">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- .................header section strts............... -->
+
+    <header>
+        <div class="menutoggle" onclick="togglemenu();">
+
+        </div>
+        <div class="logos">
+            <div> <a href="#"><img src="./images/logo-default.png" alt="logo not found" class="logo "></a></div>
+
+        </div>
+
+        <ul class="navigation">
+
+            <li class="menu-item"><a href="#about">Home</a></li>
+
+            <li class="menu-item"><a href="#banner">Shop <i class="fa-solid fa-caret-down text-white"></i></a>
+                <ul class="sub-menu" id="sub-menu">
+                    <li><a href="home-2.html"> One</a></li>
+                    <li><a href="home-2.html"> Two</a></li>
+
+
+
+                </ul>
+            </li>
+
+            <li class="menu-item"><a href="#menu">Promotion <i class="fa-solid fa-caret-down text-white"></i></a>
+                <ul class="sub-menu" id="sub-menu">
+                    <li><a href="home-2.html"> One</a></li>
+                    <li><a href="home-2.html"> Two</a></li>
+
+
+
+                </ul>
+
+            </li>
+            <li class="menu-item"><a href="#expert">BLOG <i class="fa-solid fa-caret-down text-white"></i></a>
+                <ul class="sub-menu" id="sub-menu">
+                    <li><a href="home-2.html"> One</a></li>
+                    <li><a href="home-2.html"> Two</a></li>
+
+
+
+                </ul>
+            </li>
+            <li class="menu-item"><a href="#other">Special <i class="fa-solid fa-caret-down text-white"></i></a>
+                <ul class="sub-menu" id="sub-menu">
+                    <li><a href="home-2.html"> One</a></li>
+                    <li><a href="home-2.html"> Two</a></li>
+
+
+
+                </ul>
+            </li>
+            <li class="menu-item"><a href="#contact">Pages <i class="fa-solid fa-caret-down text-white"></i></a>
+                <ul class="sub-menu" id="sub-menu">
+                    <li><a href="home-2.html"> One</a></li>
+                    <li><a href="home-2.html"> Two</a></li>
+
+
+
+                </ul>
+            </li>
+            <li class="menu-item"><a href="#contact">Vendor <i class="fa-solid fa-caret-down text-white"></i></a>
+                <ul class="sub-menu" id="sub-menu">
+                    <li><a href="home-2.html"> One</a></li>
+                    <li><a href="home-2.html"> Two</a></li>
+
+
+
+                </ul>
+            </li>
+
+        </ul>
+
+        <div class="support-area">
+            <ul>
+                <li>
+                    <a href="#"><i class="fas fa-lock"></i> Login or Register</i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-phone"></i> Hotline (+123)4 567 890</a>
+                </li>
+
+            </ul>
+        </div>
+
+
+    </header>
+
+
+    <section class="third-banner">
+        <div class="container">
+            <div class="row ">
+                <div class="col-xl-3 col-lg-3">
+                    <div class="1st-col">
+                        <div class="all-dept">
+                            <span>All Department</span>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-xl-6 col-lg-6">
+                    <div class="wrap">
+                        <div class="search">
+                            <input type="text" class="searchTerm" placeholder="Search here...">
+                            <button type="submit" class="searchButton">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-xl-3 col-lg-3">
+                    <div class="support-area">
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fas fa-rotate fa-2x"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-heart fa-2x"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-bag-shopping fa-2x"></i> MY CART - <span
+                                        style="color: #ff3c20;">$0.00</span></a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="serv-details">
+        <div class="container" style="max-width: 1680px;">
+            <div class="row justify-content-lg-between justify-content-xl-between justify-content-center">
+                <div class="col-lg-2 col-xl-2 col-md-10">
+                    <div class="first-data" style="margin-right: -30px;">
+                        <div class="upper">
+                            <div class="all-soln">
+
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            Fashion
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Electronics
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            
+                                            Furniture
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                           Bathroom
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            livingroom
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            electronics
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        furniture
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            parts
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            home &lights
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Fashion
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Fashion
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            + More
+
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="upper">
+                            <img src="./images/banner-left1.png" alt="" class="src">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-7 col-xl-8 col-md-10 ">
+                    <div class="second-data">
+                        <div class="serv-det-img">
+                            <img src="./images/fgfg.png" alt="" class="src">
+                        </div>
+
+                        <div class="serv-det-img " style="padding-top: 30px;">
+                            <img src="./images/cus1.jpg" alt="" class="src">
+                        </div>
+
+                        <hr style="width:100%; margin-top: 90px;">
+
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <img class="card-img-bottom" src="./images/hhgh.png" alt="Card image">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="card-body">
+                                                <h5 class="card-title">odit ut Fugit</h5>
+                                                <div class="item-price">
+                                                    <span>
+                                                        <del><span class="woocommerce-Price-amount amount"
+                                                                data-original="<bdi><span class=&quot;woocommerce-Price-currencySymbol&quot;>$</span>160.00</bdi>"
+                                                                data-price="160"
+                                                                title="Original price:160">$160.00</span></del>
+                                                        <ins><span class="woocommerce-Price-amount amount"
+                                                                data-original="<bdi><span class=&quot;woocommerce-Price-currencySymbol&quot;>$</span>50.00</bdi>"
+                                                                data-price="50"
+                                                                title="Original price:50">$50.00</span></ins> </span>
+                                                </div>
+                                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                                    elit. Autem aspernatur maxime assumenda quidem consequuntur, commodi
+                                                    suscipit quae eveniet!?</p>
+
+                                                <h5 class="card-title">Hurry up!<br>
+                                                    <span style="font-size: 12px;color: gray;">offers end</span>
+                                                </h5>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <img class="card-img-bottom" src="./images/hj.png" alt="Card image">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="card-body">
+                                                <h5 class="card-title">odit ut Fugit</h5>
+                                                <div class="item-price">
+                                                    <span>
+                                                        <del><span class="woocommerce-Price-amount amount"
+                                                                data-original="<bdi><span class=&quot;woocommerce-Price-currencySymbol&quot;>$</span>160.00</bdi>"
+                                                                data-price="160"
+                                                                title="Original price:160">$160.00</span></del>
+                                                        <ins><span class="woocommerce-Price-amount amount"
+                                                                data-original="<bdi><span class=&quot;woocommerce-Price-currencySymbol&quot;>$</span>50.00</bdi>"
+                                                                data-price="50"
+                                                                title="Original price:50">$50.00</span></ins> </span>
+                                                </div>
+                                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                                    elit. Autem aspernatur maxime assumenda quidem consequuntur, commodi
+                                                    suscipit quae eveniet!?</p>
+
+                                                <h5 class="card-title">Hurry up!<br>
+                                                    <span style="font-size: 12px;color: gray;">offers end</span>
+                                                </h5>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="col-lg-2 col-xl-2 col-md-10">
+                    <div class="first-data" >
+                        <div class="upper">
+                            <img src="./images/banner-right1.jpg" alt="" class="src">
+                        </div>
+
+                        <div class="upper">
+                            <img src="./images/banner-right2.jpg" alt="" class="src">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-xl-4 col-md-4">
+                  
+                    <h3 class="text-white" style="padding-top: 20px;">   <i class="fab fa-telegram"></i>Signup for Newsletter</h3>
+                    <p class="text-white">We’ll never share your email address with a third-party</p>
+                </div>
+
+                <div class="col-xl-6 col-lg-6">
+                    <div class="wrap" style="padding-top: 30px;">
+                        <div class="search">
+                            <input type="text" class="searchTerm" placeholder="your email..">
+                            <button type="submit" class="searchButton">
+                               submit
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-4 col-lg-4 col-md-10">
+                    <div class="abt">
+                        <img src="./images/logo.jpg" alt="" class="src">
+                        <ul style="list-style: none; padding-top: 20px;">
+                            <li>San Luis Potosí, Centro Historico, 78000 San Luis Potosí, SPL, Mexico</li>
+                            <li>(+0214)0 315 215 - (+0214)0 315 215</li>
+                            <li>Contact@Wpthemego.Com</li>
+                            <li>Open Time: 8:00AM - 6:00PM</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-2 col-md-4">
+                    <div class="comp">
+                        <h3>Company</h3>
+                        <ul>
+                            <li>What's new</li>
+                            <li>Try Demo</li>
+                            <li>Terms of service</li>
+                            <li>Page Builder</li>
+                            <li>Privacy policy</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-4">
+                    <div class="comp">
+                        <h3>Product</h3>
+                        <ul>
+                            <li>Features</li>
+                            <li> Pricing</li>
+                            <li>Customers</li>
+                            <li>Page Builder</li>
+                            <li>What's new</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-4">
+                    <div class="comp">
+                        <h3>Help Center</h3>
+                        <ul>
+                            <li>Help centre</li>
+                            <li> Email Us</li>
+                            <li> Customers</li>
+                            <li> Message Us</li>
+                            <li> Blog</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------------footer end--------------------------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------copyright strt-------------------------------------------------------------------------------------- -->
+    <div class="copyright" style="background-color: #545954;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 .col-xl-6 d-lg-flex d-xl-flex d-block align-items-center">
+                    <div class="copy-txt">
+                        <p>Copyright © 2023 murtes. All Rights Reserved</p>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 col-xl-6">
+                    <div class="socials">
+                        <ul>
+                            <li><i class="fab fa-facebook fa-2x"></i></li>
+                            <li><i class="fab fa-twitter fa-2x"></i></i></li>
+                            <li><i class="fab fa-skype fa-2x"></i></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

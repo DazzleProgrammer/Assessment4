@@ -1,0 +1,17 @@
+div {
+    /* border: 1px solid black; */
+}
+
+.nav-link{
+    color: white !important;
+}
+.sofa-col{
+    background-image: url('img/Beautiful\ modern\ sofa\ furniture\ designs..jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.newsletter{
+    height: 30vh;
+}

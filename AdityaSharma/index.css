@@ -1,0 +1,20 @@
+.text-dark {
+    text-decoration: none;
+    line-height: 25px !important;
+}
+
+.crausal {
+    background-image: url("/img/Beautiful\ modern\ sofa\ furniture\ designs..jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbard,
+.navbar {
+    background-color: #232F3E;
+}
+
+.hoem li a {
+    font-weight: 600 !important;
+    color: white !important;
+}

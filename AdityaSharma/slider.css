@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(60, 59, 59);
+}
+
+.slider {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.6s;
+}
+
+.openbtn {
+    margin: 15px;
+    height: 40px;
+    padding-inline: 40px;
+}
+
+.contentsection {
+    height: 15px;
+}
+
+ul p {
+    cursor: pointer;
+}
+
+.hiddenContent {
+    display: none;
+}

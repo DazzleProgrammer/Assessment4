@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero{
+    background: rgb(240, 239, 239);
+    display: flex;
+    text-align: center;
+    padding: 10px;
+}
+.hero i{
+    margin-top: 20px;
+}
+.hero h1{
+    margin-left: 20px;
+}
+.sidebar {
+    width: 250px;
+    background-color: rgb(240, 239, 239);
+    color: #fff;
+    padding: 20px;
+}
+
+.dropdown {
+    display: none;
+}
+.dropdown a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: black;
+}
+
+.dropdown-toggle {
+    border: none;
+    padding: 28px;
+    cursor: pointer;
+}
+
+
+

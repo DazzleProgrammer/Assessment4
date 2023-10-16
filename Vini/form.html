@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <h2><b>Already Register ? <u>Login</u> now </h2> </b>
+<form action="login.php" method="post">
+    <label for="login_email">Email:</label>
+    <input type="email" id="login_email" name="login_email" required><br><br>
+
+    <label for="login_password">Password:</label>
+    <input type="password" id="login_password" name="login_password" required><br><br>
+
+    <input type="submit" value="Login">
+</form>
+    <hr> 
+
+<img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEw6uoyp0JcCaVtow4Fjx49d0jyN52HUJoPlSBRU-klvNfw-sL" alt="Registration Image" width="1200" height="200">
+
+<hr> 
+<u><h2>Registration Form</h2>
+</u>
+
+<form action="submit_registration.php" method="post">
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name" name="first_name" required><br><br>
+
+    <label for="last_name">Last Name:</label>
+    <input type="text" id="last_name" name="last_name" required><br><br>
+
+    <label for="flat_no">Flat No:</label>
+    <input type="text" id="flat_no" name="flat_no" required><br><br>
+
+    <label for="locality">Locality:</label>
+    <input type="text" id="locality" name= "locality" required><br><br>
+
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <label for="same_address">Is your permanent address the same as your current address?</label>
+    <input type="radio" id="yes" name="same_address" value="yes"> Yes
+    <input type="radio" id="no" name="same_address" value="no"> No<br><br>
+
+    <input type="submit" value="Register">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        button{
+            background-color:black;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <h2><b>Already Register ? <u>Login</u> now </h2> </b>
+<form action="login.php" method="post">
+        Email<input type="text" placeholder="abc@gmail.com">
+        Password<input type="password" placeholder="pass">
+        <button>Login</button>
+    </form>
+    <hr> 
+
+<img src="https://i.ytimg.com/vi/HLQ4kW9I6KA/maxresdefault.jpg" alt="Registration Image" width="1200" height="200">
+
+<hr> 
+<u><h2>Registration Form</h2>
+</u>
+
+<form action="submit_registration.php" method="post">
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name" name="first_name" required><br><br>
+
+    <label for="last_name">Last Name:</label>
+    <input type="text" id="last_name" name="last_name" required><br><br>
+
+    Current Address: <label for="flat_no">Flat No:</label>
+    <input type="text" id="flat_no" name="flat_no" required><br><br>
+
+    <label for="locality">Locality:</label>
+    <input type="text" id="locality" name= "locality" required><br><br>
+
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <label for="same_address">Is your permanent address the same as your current address?</label>
+    <input type="radio" id="yes" name="same_address" value="yes"> Yes
+    <input type="radio" id="no" name="same_address" value="no"> No<br><br>
+
+    <button>Register</button>
+</form>
+
+</body>
+</html>

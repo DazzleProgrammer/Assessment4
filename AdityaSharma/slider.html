@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="navbar">
+        <button class="openbtn" id="menubutton">Menu</button>
+    </div>
+    <div class="slider">
+        <section id="contentsection">
+            <ul>
+                <p class="contentsection" id="closebutton"><i class="fa-solid fa-bars"></i> &nbsp; <i class="fa-brands fa-youtube fa-sm" style="color: #ff0000;"></i>YouTube</p>
+                <p class="contentsection" data-target="collapse1"><i class="fa-solid fa-house"></i> Home</p>
+                <p class="contentsection" data-target="collapse1"><i class="fa-solid fa-circle-play" style="color: #ff0000;"></i> Short</p>
+                <p class="contentsection" data-target="collapse1"><i class="fa-solid fa-file-video"></i> Subscription</p>
+            </ul>
+            <hr>
+            <div id="collapse1Content" class="hiddenContent">
+                <ul>
+                    <p class="contentsection"><i class="fa-solid fa-photo-film"></i> Library</p>
+                    <p class="contentsection"><i class="fa-solid fa-clock-rotate-left"></i> History</p>
+                    <p class="contentsection"><i class="fa-regular fa-clock"></i> Watch Later</p>
+                    <p class="contentsection"><i class="fa-solid fa-thumbs-up"></i> Liked Video</p>
+                    <p class="contentsection"><i class="fa-solid fa-angle-down"></i> Show More</p>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menubutton = document.getElementById("menubutton");
+            const closebutton = document.getElementById("closebutton");
+            const slider = document.querySelector(".slider");
+
+            menubutton.addEventListener("click", function() {
+                open();
+            });
+
+            closebutton.addEventListener("click", function() {
+                close();
+            });
+
+            function open() {
+                slider.style.width = "220px";
+            }
+
+            function close() {
+                slider.style.width = "0";
+            }
+        });
+    </script>
+    <script src="slider.js"></script>
+</body>
+
+</html>

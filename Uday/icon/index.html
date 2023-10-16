@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .triangle-down {
+	width: 0;
+	height: 0;
+    z-index: 1;
+    position: absolute;top: 0;left: 0;
+	border-left: 75px solid transparent;
+	border-right: 75px solid transparent;
+	border-top: 150px solid rgb(235, 140, 68);
+}
+.triangle-down2 {
+	width: 0;
+	height: 0;
+    z-index: 0;
+	border-left: 75px solid transparent;
+	border-right: 75px solid transparent;
+	border-top: 150px solid rgb(255, 64, 0);
+}
+.triangle-down3 {
+	width: 0;
+	height: 0;
+    z-index: 0;
+	border-left: 75px solid transparent;
+	border-right: 75px solid transparent;
+	border-top: 150px solid rgb(235, 140, 68);
+}
+.triangle-down4 {
+	width: 0;
+	height: 0;
+    z-index: 0;
+	border-left: 75px solid transparent;
+	border-right: 75px solid transparent;
+	border-top: 150px solid rgb(255, 64, 0);
+    transform: rotate(180deg);
+    position: absolute;
+    top: 0;
+    left: 180px;
+}
+    </style>
+</head>
+<body>
+    <div style="background-color: purple;display: inline-block;">
+        <div style="font-size: 200px;color: bisque;padding-left: 50px;padding-right: 50px;">&#9820</div>
+    </div>
+
+    <div style="margin-top: 100px;margin-left: 50px;background-color: rgb(110, 86, 51)">
+    
+       <div style="position: relative;">
+        <div class="triangle-down"></div>
+        <div class="triangle-down2" style="position: absolute;top: 0;left: 20px;"></div>
+
+        <div class="triangle-down3" style="position: absolute;top: 0;left: 200px;transform: rotate(180deg);"></div>
+        <div class="triangle-down4"></div>
+       </div>
+ 
+    </div>
+</body>
+</html>

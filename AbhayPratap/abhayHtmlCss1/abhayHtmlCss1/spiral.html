@@ -1,0 +1,52 @@
+
+
+
+<div class="container">
+    <div class="upper">
+        <div class="spiral1"></div>
+    </div>
+    <div class="lower">
+        <div class="spiral2"></div>
+    </div>
+    </div>
+    <style>
+    * {
+        margin:0;
+        background:#F5D6B4;
+    }
+    .container {
+        height:300px;
+        width:400px;
+        display:flex;
+        flex-direction:column
+    }
+    .upper, .lower {
+    height:50%;
+    overflow:hidden;
+}
+.spiral1, .spiral2 {
+    width:40px;
+    height:40px;
+    margin:110px auto;
+    border:20px solid #d86f45;
+    border-radius:50%;
+    box-shadow:0px 0px 0px 20px #f5d6b4,
+               0px 0px 0px 40px #d86f45;
+}
+.spiral2 {
+    height:80px;
+    width:80px;
+    margin:-60px 120px;
+}
+.spiral2::before {
+    content:'';
+    position:absolute;
+    height:20px;
+    width:20px;
+    background:#D86F45;
+    border-radius:50%;
+    margin:29px 20px;
+    box-shadow:-80px 0px 0px #D86F45;
+}
+    </style>
+    

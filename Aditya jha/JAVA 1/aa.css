@@ -1,0 +1,21 @@
+.accordion-section-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+   }
+   
+   .accordion-section-header {
+    cursor: pointer;
+    
+   }
+
+   .accordion-section{
+    color: #fff;
+    background-color: orangered;
+    width: 150px;
+
+   }
+   .accordion{
+    display: grid;
+    place-items: center;
+   }

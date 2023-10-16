@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reportbtn.css">
+</head>
+
+<body>
+    <div class="video">
+        <video class="video" src="/video/21.mp4"></video>
+    </div>
+    <button id="Btn">Report</button>
+    <div id="Popup" class="popup">
+        <div class="popup-content">
+            <h3>Reason for reporting:</h3>
+            <select name="reason" id="reason">
+              <option value="Voilance">Voilance</option>
+              <option value="Meantal">Meantal Assault</option>
+              <option value="Hatefull">Hatefull</option>
+            </select>
+            <h3>Additional comments:</h3>
+            <textarea id="w3review" name="w3review" rows="4" cols="30">E23R4R
+            </textarea>
+            <br>
+            <button class="submitreport" id="submit">Submit Report</button>
+        </div>
+    </div>
+
+    <script>
+        var btn = document.getElementById("Btn");
+        var popup = document.getElementById("Popup");
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+            popup.style.display = "block";
+        }
+        span.onclick = function() {
+            popup.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == popup) {
+                popup.style.display = "none";
+            }
+        }
+        document.getElementById("submit").onclick = function() {
+            var report = document.getElementById("report").value;
+            alert("Submit Report: " + report);
+            popup.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

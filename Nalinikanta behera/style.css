@@ -1,0 +1,16 @@
+.banner{
+    margin: 20px;
+}
+.address{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+}
+.add{
+    padding-right: 5%
+}
+.submit{
+    background-color: black;
+    color: white;
+}

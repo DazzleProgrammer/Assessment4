@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid d-flex flex-column justify-content-center  vh-100">
+        <div class="container">
+            <div class="video-frame">
+                <video class="video-frame" src="https://www.pexels.com/video/waves-rushing-to-the-shore-1321208/"></video>
+            </div>
+            <button id="Btn" class="btn btn-danger">Report</button>
+        </div>
+        <div id="Popup" class="popup">
+            <div class="popup-content">
+                <h3>Reason for reporting:</h3>
+                <select name="reason" id="reason">
+                    <option value="1">Voilance</option>
+                    <option value="2"> Violence</option>
+                    <option value="3">Violenceull</option>
+                </select>
+                <h3>Additional comments:</h3>
+                <textarea  name="txt" rows="4" cols="20" placeholder="type your report">
+            </textarea>
+                <br>
+                <button class="submitreport" id="submit">Submit Report</button>
+                
+            </div>
+        </div>
+    </div>
+
+  
+    <script src="script.js"></script>
+
+</body>
+
+</html>

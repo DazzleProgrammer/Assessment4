@@ -1,0 +1,61 @@
+body {
+    background: #191919;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    width: 100%;
+  }
+  
+  div {
+    position: absolute;
+  }
+  
+  .div1,
+  .div2,
+  .div3 {
+    background: #191919;
+    border-radius: 0 200px 200px 0;
+    border: 10px solid #5dbcf9;
+    border-left: none;
+    position: absolute;
+  }
+  
+  .div1{
+    width: 90px;
+    height: 180px;
+    left: 142px; 
+  }
+  
+  .div2 {
+    width: 65px;
+    height: 130px;
+    left: 142px; 
+  }
+  
+  .div3 {
+    width: 40px;
+    height: 80px;
+    left: 141px;
+  }
+  
+  .link {
+    border-right: 100px solid #5dbcf9;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    position: absolute;
+    left: 40px; 
+    top: 34px;
+  }
+  
+  .wave {
+    width: 100px;
+    height: 50px;
+    background: #5dbcf9;
+    border-radius: 10px;
+    position: absolute;
+    left: 15px; 
+    top: 110px;
+  }
+  
+  

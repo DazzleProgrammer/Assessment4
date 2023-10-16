@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Report Form</h1>
+        <form id="report-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <div class="error-message" id="name-error">Name is required</div>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description"></textarea>
+            <div class="error-message" id="description-error">Description is required</div>
+
+            <button type="button" id="report-button">Report</button>
+        </form>
+        <div id="success-message" style="display: none;">Form submitted successfully!</div>
+        <button type="button" id="refresh-button" style="display: none;">Refresh Form</button>
+    </div>
+
+    <script>
+        const reportButton = document.getElementById("report-button");
+        const refreshButton = document.getElementById("refresh-button");
+
+        reportButton.addEventListener("click", () => {
+            // Reset error messages
+            document.getElementById("name-error").style.display = "none";
+            document.getElementById("description-error").style.display = "none";
+
+            // Get form values
+            const name = document.getElementById("name").value;
+            const description = document.getElementById("description").value;
+
+            if (!name || !description) {
+                if (!name) {
+                    document.getElementById("name-error").style.display = "block";
+                }
+                if (!description) {
+                    document.getElementById("description-error").style.display = "block";
+                }
+            } else {
+                const successMessage = document.getElementById("success-message");
+                successMessage.style.display = "block";
+
+                reportButton.style.display = "none"; // Hide the report button
+                refreshButton.style.display = "block"; // Show the refresh button
+            }
+        });
+
+        refreshButton.addEventListener("click", () => {
+            // Reset the form, hide the success message, and hide the refresh button
+            document.getElementById("report-form").reset();
+            document.getElementById("success-message").style.display = "none";
+            refreshButton.style.display = "none"; 
+            reportButton.style.display = "block";
+        });
+    </script>
+</body>
+</html>

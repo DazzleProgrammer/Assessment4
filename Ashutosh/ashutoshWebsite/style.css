@@ -1,0 +1,12 @@
+.navbard,
+.navbar{
+    background-color: rgb(16, 6, 39);
+}
+#sofa{
+    background-image: url(https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZnVybml0dXJlfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#bla{
+    background-color: rgb(21, 21, 21); 
+}

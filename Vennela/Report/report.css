@@ -1,0 +1,44 @@
+.white{
+    background: #070707;
+    padding: 150px;
+}
+#report-card{
+    background-color: #0d0d0d;
+    border: 20px solid #fff;
+    padding: 25px;
+    border-radius: 1px;
+    box-shadow: 0 0 1px rgba(13, 13, 13, 0.2);
+    width: 400px;
+    height: 250px;
+    margin: 20px auto;
+}
+form {
+    text-align: left;
+    color: #fff;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+select, textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 7px;
+    background-color: #474545;
+    color: #fff;
+}
+#submit-report {
+    background-color: #f30606; 
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#submit-report:hover {
+    background-color: #cc0000;
+}
